@@ -171,7 +171,12 @@ namespace Yuz_Tanımlama
             {
                 btnEkle.Enabled = false;
                 yuzkaydedici = true;
-                MessageBox.Show("3 Saniye Boyunca Kafanızı Sağ-Sol Yönünde Hareket Ettiriniz");
+                for (int i = 0; i < 10; i++)
+                {
+                    Thread.Sleep(200);
+                    label1.Text = (i + 1) + "adet eğitildi"; 
+                }
+                label1.Visible = true;
                 return;
 
             }
